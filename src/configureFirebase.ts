@@ -3,12 +3,22 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
-// Your web app's Firebase configuration.  
+// Your web app's Firebase configuration.
 //
-// Usually, you need to fastidiously guard API keys (for example, by 
-// setting the keys as environment variables); 
+// Usually, you need to fastidiously guard API keys (for example, by
+// setting the keys as environment variables);
 // however, API keys for Firebase services are ok to include in code or checked-in config files.
-const firebaseConfig = { todo: "Replace this object with your config!" };
+
+// TODO ? why can you keep this api key in git?
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAV2jOkCA44mabjTmFjEnlr30-km_3KRbA",
+  authDomain: "c5-auth-workshop.firebaseapp.com",
+  projectId: "c5-auth-workshop",
+  storageBucket: "c5-auth-workshop.appspot.com",
+  messagingSenderId: "950470487876",
+  appId: "1:950470487876:web:524c2d136044103cb73111",
+};
 
 // Initialize Firebase as a whole
 export const app = initializeApp(firebaseConfig);
